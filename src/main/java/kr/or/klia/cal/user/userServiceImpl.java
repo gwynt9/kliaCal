@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class userServiceImpl implements userService{
+
     private String name;
     private String department;
     private String position;
@@ -15,6 +16,13 @@ public class userServiceImpl implements userService{
     private String permission;
     private String sex;
     private String comment;
+
+    public userServiceImpl() {
+    }
+
+    public userServiceImpl(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;

@@ -1,0 +1,13 @@
+create table user(
+email varchar(255) not null,
+name varchar(100),
+department varchar(100),
+position varchar(100),
+employeeNo int,
+phone int,
+cellPhone int,
+birthday int,
+permission varchar(100),
+sex varchar(10),
+company varchar(100)
+)

@@ -1,16 +1,26 @@
 package kr.or.klia.cal.user;
 
 public class user {
+    private String email;
     private String name;
     private String department;
     private String position;
     private int employeeNo;
     private int phone;
     private int cellPhone;
-    private String email;
     private int birthday;
     private String permission;
     private String sex;
+    private String company;
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
     private String comment;
 
     public String getName() {
