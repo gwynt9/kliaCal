@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 @Getter @Setter
 @Service
-public class userServiceImpl implements userService{
+public class UserServiceImpl implements UserService {
 
 //    @NonNull
     private String email;

@@ -1,0 +1,60 @@
+@startuml
+
+object Company
+object User
+object Schedule
+object Department
+
+Company : company_id : long
+Company : name : string
+Company : type : string
+Company : orders : int
+Company : code : string
+Company : logo : byte
+Company : startTime : LocalDateTime
+Company : endTime : LocalDateTime
+Company : Department : department
+
+Department : department_id : long
+Department : name : string
+Department : phone : int
+Department : fax : int
+Department : parentId : long
+Department : orders : int
+Department : company : Company
+Department : employee : User
+
+User : user_id : long
+User : email : string
+User : name : string
+User : position : string
+User : employeeNo : string
+User : phone : int
+User : cellPhone : int
+User : publicPhone : int
+User : birthday : int
+User : permission : string
+User : sex : string
+User : Department : department
+User : schedule : Schedule
+
+Schedule : schedule_id : long
+Schedule : name : string
+Schedule : location : string
+Schedule : startTime : LocalDateTime
+Schedule : endTime : LocalDateTime
+Schedule : attendees : list<User>
+Schedule : creater : User
+Schedule : finalUpdater : User
+Schedule : publicYN : enum
+Schedule : type : list<string>
+Schedule : comment : string
+Schedule : file : byte
+Schedule : alram : date
+Schedule : alramMethod : enum
+
+
+Company "1"--"*" Department
+Department "1"--"*" User
+User "1"--"*" Schedule
+@enduml

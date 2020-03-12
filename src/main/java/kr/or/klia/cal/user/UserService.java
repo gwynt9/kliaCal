@@ -1,6 +1,6 @@
 package kr.or.klia.cal.user;
 
-public interface userService {
+public interface UserService {
 
     String getName();
 

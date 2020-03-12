@@ -1,4 +1,4 @@
 package kr.or.klia.cal.user.domain;
 
-public interface userRepository {
+public interface UserRepository {
 }

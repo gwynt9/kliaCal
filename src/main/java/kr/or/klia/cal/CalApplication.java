@@ -11,4 +11,8 @@ public class CalApplication {
         System.out.println("init");
     }
 
+    //todo: 일정추가, 수정, 삭제
+    //todo: 일정조회(개인별,부서별|일간,주간,월간)
+    //todo: 담당자조회(이름, 업무, 회사)
+
 }
